@@ -12,14 +12,12 @@ echo ${branch}
 if [ ${branch} = 'master' ]
 then 
   echo 'master 生产打包'
-  rm -rf ./dist
   yarn run build:prod
   cd ./dist
   touch prod.txt
   addGitCommit ${branch}
 else
   echo 'test 打包'
-  rm -rf ./dist
   yarn run build:test
   cd ./dist
   touch test.txt
