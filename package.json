@@ -41,6 +41,6 @@
     "not dead"
   ],
   "gitHooks":{
-    "pre-push":"node do.js"
+    "prePush":"node do.js"
   }
 }
