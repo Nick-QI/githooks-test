@@ -40,7 +40,7 @@
     "last 2 versions",
     "not dead"
   ],
-  "githooks":{
-    "pre-push":"build:test"
+  "gitHooks":{
+    "pre-push":"yarn run build:test"
   }
 }
