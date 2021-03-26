@@ -41,6 +41,6 @@
     "not dead"
   ],
   "gitHooks":{
-    "pre-push":"yarn run build:test"
+    "pre-commit":"node do.js"
   }
 }
