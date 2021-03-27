@@ -6,7 +6,6 @@ rm -rf dist
 fi
 
 branch=$(git branch | grep '*' | sed 's/* //') 
-commitText=''
 echo "当前分支 =====>> ${branch}"
 echo "注意: 目前设置为 master分支下 production 模式打包, test分支下 development 模式打包"
 
@@ -19,9 +18,10 @@ else
   yarn run build:test
 fi
 
+
 # cp -r buildFile/. dist/
 
-# echo $commitText $branch
+echo $commitText $branch
 
 # git add .
 # git commit -m $commitText
