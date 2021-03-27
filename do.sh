@@ -28,7 +28,7 @@ echo $commitText $branch
 
 
 git add .
-git commit -m $commitText
+git commit -m$commitText
 
 if [ ${branch} = 'master' ]
 then 
