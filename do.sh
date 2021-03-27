@@ -3,7 +3,7 @@
 if  [ -d  "dist"  ]
 then
 rm -rf dist
-git add .
+git add -A
 git commit -m "删除上一版本本地包"
 fi
 
@@ -27,8 +27,8 @@ echo $commitText $branch
 
 
 
-git add .
-git commit -m '保存下'
+git add -A
+git commit -m $commitText
 
 echo 'end ===================='
 if [ ${branch} = 'master' ]
