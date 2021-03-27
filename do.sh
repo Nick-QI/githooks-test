@@ -28,7 +28,7 @@ echo $commitText $branch
 
 
 git add .
-git commit -m$commitText
+git commit -m '保存下'
 
 echo 'end ===================='
 if [ ${branch} = 'master' ]
