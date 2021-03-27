@@ -27,14 +27,14 @@ echo $commitText $branch
 
 
 
-# git add .
-# git commit -m $commitText
+git add .
+git commit -m $commitText
 
-# if [ ${branch} = 'master' ]
-# then 
-#   echo 'master 分支，打tag部署===>>'
-#   date=$(date +%Y%m%d%H%M)
-#   git tag -a tag$date -m $date
-#   echo "当前TAG= "tag$date  
-# fi
+if [ ${branch} = 'master' ]
+then 
+  echo 'master 分支，打tag部署===>>'
+  date=$(date +%Y%m%d%H%M)
+  git tag -a tag$date -m $date
+  echo "当前TAG= "tag$date  
+fi
 
