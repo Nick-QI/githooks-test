@@ -3,6 +3,8 @@
 if  [ -d  "dist"  ]
 then
 rm -rf dist
+git add .
+git commit -m "删除上一版本本地包"
 fi
 
 branch=$(git branch | grep '*' | sed 's/* //') 
