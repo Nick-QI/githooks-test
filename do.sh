@@ -30,6 +30,7 @@ echo $commitText $branch
 git add .
 git commit -m$commitText
 
+echo 'end ===================='
 if [ ${branch} = 'master' ]
 then 
   echo 'master 分支，打tag部署===>>'
