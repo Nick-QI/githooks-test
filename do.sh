@@ -2,7 +2,7 @@
 
 if  [ -d  "dist"  ]
 then
-rm -rf dist/
+rm -rf dist/*
 git add -A
 git commit -m "删除上一版本本地包"
 fi
