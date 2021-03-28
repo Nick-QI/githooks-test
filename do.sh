@@ -2,7 +2,7 @@
 
 if  [ -d  "dist"  ]
 then
-rm -rf dist
+rm -rf dist/
 git add -A
 git commit -m "删除上一版本本地包"
 fi
@@ -23,7 +23,7 @@ fi
 
 # cp -r buildFile/. dist/
 
-echo $commitText $branch
+echo $commitText
 
 git add -A
 git commit -m $commitText
