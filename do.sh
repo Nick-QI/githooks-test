@@ -28,6 +28,7 @@ echo $commitText $branch
 git add -A
 git commit -m $commitText
 
+
 echo 'end ===================='
 if [ ${branch} = 'master' ]
 then 
@@ -36,4 +37,6 @@ then
   git tag -a tag$date -m $date
   echo "当前TAG= "tag$date  
 fi
+
+exit 0
 
