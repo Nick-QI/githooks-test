@@ -13,10 +13,10 @@ echo "注意: 目前设置为 master分支下 production 模式打包, test分�
 
 if [ ${branch} = 'master' ]
 then 
-  commitText="deploy ${branch} 分支下,production模式打包部署"
+  commitText="deploy ${branch}分支下,production模式打包部署"
   npx yarn run build:prod
 else
-  commitText="deploy ${branch} 分支下,development模式打包部署"
+  commitText="deploy ${branch}分支下,development模式打包部署"
   npx yarn run build:test
 fi
 
