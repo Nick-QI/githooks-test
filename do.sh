@@ -1,12 +1,12 @@
 #!/bin/sh
 
-if  [ -d  "dist"  ]
-then
-rm -rf dist/*
-git add -A
-git commit -m "删除上一版本本地包"
-fi
-
+# if  [ -d  "dist"  ]
+# then
+# rm -rf dist/*
+# git add -A
+# git commit -m "删除上一版本本地包"
+# fi
+commitText=""
 branch=$(git branch | grep '*' | sed 's/* //') 
 echo "当前分支 =====>> ${branch}"
 echo "注意: 目前设置为 master分支下 production 模式打包, test分支下 development 模式打包"
@@ -27,8 +27,8 @@ echo $commitText
 
 git add -A
 
-git commit -m '保存'
-# git commit -m $commitText
+# git commit -m '保存'
+git commit -m $commitText
 
 
 echo 'end ===================='
