@@ -26,12 +26,8 @@ fi
 echo $commitText
 
 git add -A
-
-# git commit -m '保存'
 git commit -m $commitText
 
-
-echo 'end ===================='
 if [ ${branch} = 'master' ]
 then 
   echo 'master 分支，打tag部署===>>'
