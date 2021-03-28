@@ -26,7 +26,7 @@ fi
 echo $commitText
 
 git add -A
-git commit -m ${commitText}
+git commit -m "打包"
 
 if [ ${branch} = 'master' ]
 then 
