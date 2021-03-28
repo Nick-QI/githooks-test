@@ -25,8 +25,6 @@ fi
 
 echo $commitText $branch
 
-
-
 git add -A
 git commit -m $commitText
 
