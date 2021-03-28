@@ -26,7 +26,9 @@ fi
 echo $commitText
 
 git add -A
-git commit -m $commitText
+
+git commit -m '保存'
+# git commit -m $commitText
 
 
 echo 'end ===================='
