@@ -40,7 +40,13 @@
     "last 2 versions",
     "not dead"
   ],
-  "gitHooks":{
-    "pre-push":"sh ./do.sh"
+  "gitHooks": {
+    "pre-push": "sh ./do.sh"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
